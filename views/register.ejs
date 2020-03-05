@@ -1,102 +1,192 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Form-v8 by Colorlib</title>
-	<!-- Mobile Specific Metas -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<!-- Font-->
-	<link rel="stylesheet" type="text/css" href="css/sourcesanspro-font.css">
-	<!-- Main Style Css -->
-    <link rel="stylesheet" href="css/style.css"/>
-</head>
-<body class="form-v8">
-	<div class="page-content">
-		<div class="form-v8-content">
-			<div class="form-left">
-				<img src="images/form-v8.jpg" alt="form">
-			</div>
-			<div class="form-right">
-				<div class="tab">
-					<div class="tab-inner">
-						<button class="tablinks" onclick="openCity(event, 'sign-up')" id="defaultOpen">Sign Up</button>
-					</div>
-					<div class="tab-inner">
-						<button class="tablinks" onclick="openCity(event, 'sign-in')">Sign In</button>
-					</div>
-				</div>
-				<form class="form-detail" action="#" method="post">
-					<div class="tabcontent" id="sign-up">
-						<div class="form-row">
-							<label class="form-row-inner">
-								<input type="text" name="full_name" id="full_name" class="input-text" required>
-								<span class="label">Username</span>
-		  						<span class="border"></span>
-							</label>
-						</div>
-						<div class="form-row">
-							<label class="form-row-inner">
-								<input type="text" name="your_email" id="your_email" class="input-text" required>
-								<span class="label">E-Mail</span>
-		  						<span class="border"></span>
-							</label>
-						</div>
-						<div class="form-row">
-							<label class="form-row-inner">
-								<input type="password" name="password" id="password" class="input-text" required>
-								<span class="label">Password</span>
-								<span class="border"></span>
-							</label>
-						</div>
-						<div class="form-row">
-							<label class="form-row-inner">
-								<input type="password" name="comfirm_password" id="comfirm_password" class="input-text" required>
-								<span class="label">Comfirm Password</span>
-								<span class="border"></span>
-							</label>
-						</div>
-						<div class="form-row-last">
-							<input type="submit" name="register" class="register" value="Register">
-						</div>
-					</div>
-				</form>
-				<form class="form-detail" action="#" method="post">
-					<div class="tabcontent" id="sign-in">
-						<div class="form-row">
-							<label class="form-row-inner">
-								<input type="text" name="full_name_1" id="full_name_1" class="input-text" required>
-								<span class="label">Username</span>
-		  						<span class="border"></span>
-							</label>
-						</div>
-						<div class="form-row">
-							<label class="form-row-inner">
-								<input type="text" name="your_email_1" id="your_email_1" class="input-text" required>
-								<span class="label">E-Mail</span>
-		  						<span class="border"></span>
-							</label>
-						</div>
-						<div class="form-row">
-							<label class="form-row-inner">
-								<input type="password" name="password_1" id="password_1" class="input-text" required>
-								<span class="label">Password</span>
-								<span class="border"></span>
-							</label>
-						</div>
-						<div class="form-row">
-							<label class="form-row-inner">
-								<input type="password" name="comfirm_password_1" id="comfirm_password_1" class="input-text" required>
-								<span class="label">Comfirm Password</span>
-								<span class="border"></span>
-							</label>
-						</div>
-						<div class="form-row-last">
-							<input type="submit" name="register" class="register" value="Sign In">
-						</div>
-					</div>
-				</form>
-			</div>
-		</div>
+<div class="site-navbar py-2">
+
+    <div class="search-wrap">
+      <div class="container">
+        <a href="#" class="search-close js-search-close"><span class="icon-close2"></span></a>
+        <form action="#" method="post">
+          <input type="text" class="form-control" placeholder="Search keyword and hit enter...">
+        </form>
+      </div>
     </div>
-</body>
-</html>
+
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <div class="site-logo">
+            <a href="index.html" class="js-logo-clone">LapiTapy</a>
+          </div>
+        </div>
+        <div class="main-nav d-none d-lg-block">
+          <nav class="site-navigation text-right text-md-center" role="navigation">
+            <ul class="site-menu js-clone-nav d-none d-lg-block">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Store</a></li>
+              <li class="has-children">
+                <a href="#">Dropdown</a>
+                <ul class="dropdown">
+                  <li><a href="#">Dell</a></li>
+                  <li class="has-children">
+                    <a href="#">Types</a>
+                    <ul class="dropdown">
+                      <li><a href="#">Apple</a></li>
+                      <li><a href="#">Acer</a></li>
+                      <li><a href="#">Sony</a></li>
+                      <li><a href="#">hp</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Sony</a></li>
+                  <li><a href="#">hp</a></li>
+
+                </ul>
+              </li>
+              <li><a href="about.html">About</a></li>
+              <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="icons">
+          <a href="#" class="icons-btn d-inline-block js-search-open"><span class="icon-search"></span></a>
+          <a href="cart.html" class="icons-btn d-inline-block bag">
+            <span class="icon-shopping-bag"></span>
+            <span class="number">2</span>
+          </a>
+          <a href="#" class="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none"><span
+              class="icon-menu"></span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-light py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 mb-0">
+          <a href="index.html">Home</a> <span class="mx-2 mb-0">/</span>
+          <strong class="text-black">Contact</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="h3 mb-5 text-black">Get In Touch</h2>
+        </div>
+        <div class="col-md-12">
+  
+          <form action="/users/register" method="post">
+  
+            <div class="p-3 p-lg-5 border">
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <label for="c_fname" class="text-black">First Name <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="c_fname" name="c_fname">
+                </div>
+                <div class="col-md-6">
+                  <label for="c_lname" class="text-black">Email <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="c_lname" name="c_lname">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <label for="c_email" class="text-black">Password <span class="text-danger">*</span></label>
+                  <input type="email" class="form-control" id="c_email" name="c_email" placeholder="">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <label for="c_subject" class="text-black">Confirm Password </label>
+                  <input type="text" class="form-control" id="c_subject" name="c_subject">
+                </div>
+              </div>
+  
+            <!----  <div class="form-group row">
+                <div class="col-md-12">
+                  <label for="c_message" class="text-black">Message </label>
+                  <textarea name="c_message" id="c_message" cols="30" rows="7" class="form-control"></textarea>
+                </div>
+              </div>-->
+              <div class="form-group row">
+                <div class="col-lg-12">
+                  <input type="submit" class="btn btn-primary btn-lg btn-block" value="Send Message">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="site-section bg-primary">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-white mb-4">Offices</h2>
+        </div>
+        <div class="col-lg-4">
+          <div class="p-4 bg-white mb-3 rounded">
+            <span class="University of Sargodha">Pakistan</span>
+            <p class="mb-0">University road UOS Sargodha</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="p-4 bg-white mb-3 rounded">
+            <span class="University of Sargodha">Pakistan</span>
+            <p class="mb-0">University road UOS Sargodha</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="p-4 bg-white mb-3 rounded">
+            <span class="University of Sargodha">Pakistan</span>
+            <p class="mb-0">University road UOS Sargodha</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+
+          <div class="block-7">
+            <h3 class="footer-heading mb-4">About Us</h3>
+            <p>We are providing different varity of laptops like Apple,Acer,Dell,hp and Sony</p>
+          </div>
+
+        </div>
+        <div class="col-lg-3 mx-auto mb-5 mb-lg-0">
+          <h3 class="footer-heading mb-4">Quick Links</h3>
+          <ul class="list-unstyled">
+             <li><a href="#">Apple</a></li>
+            <li><a href="#">DELL</a></li>
+            <li><a href="#">SONY</a></li>
+            <li><a href="#">aacer</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="block-5 mb-5">
+            <h3 class="footer-heading mb-4">Contact Info</h3>
+            <ul class="list-unstyled">
+              <li class="address">University o Sargodha Main Campus</li>
+              <li class="phone"><a href="tel://23923929210">+923041296564</a></li>
+              <li class="email">mansooralger@gmail.com</li>
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+      
+    </div>
+  </footer>

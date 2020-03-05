@@ -9,12 +9,15 @@ const app=express();
 
 //EJS MiddleWare
 app.use(express.static(path.join(__dirname,"views")));
+
 app.use(expressLayouts);
+app.use(express.static(path.join(__dirname,"views")));
 app.set('view engine','ejs');
 
 //Body Parse
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+
 
 //Routes
 app.use('/',require('./routs/index'));
