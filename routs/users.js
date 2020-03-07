@@ -6,7 +6,7 @@ router.get('/login',(req,res)=>res.render('login'));
 router.get('/register',(req,res)=>res.render('register'));
 //Register Handel
 router.post('/register',(req,res)=>{
-    Console.log(req.body)
-    req.send('hello');
-})
+    Console.log(req.body);
+    res.send('hello');
+});
 module.exports=router;
